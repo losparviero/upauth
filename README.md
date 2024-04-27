@@ -4,6 +4,8 @@ Authentication management solution for Upstox's Uplink API.
 
 You only have to implement it in your code, it takes care of caching and reusing the access token.
 
+The token is persisted throughout in the .env till it expires.
+
 _Note:_ This is a partially automated solution. You are redirected to Upstox website still to enter PIN if a new token has to be generated.
 
 ### Usage
@@ -21,7 +23,7 @@ npm i upauth
 
 <details>
 <summary>
-Make sure your .env has the following variables and your redirect_url is set to the one below on Upstox.
+Make sure your .env has the following variables and your redirect_uri is set to the one below on Upstox.
 </summary>
 <br>
 
