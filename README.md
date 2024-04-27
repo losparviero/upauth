@@ -15,9 +15,12 @@ const accessToken = await performAuth();
 
 ### Install
 
-`npm i upauth`
+```
+npm i upauth
+```
 
 <details>
+
 <summary>
 
 Make sure your .env has the following variables and your redirect_url is set to the one below on Upstox.
