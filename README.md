@@ -20,12 +20,10 @@ npm i upauth
 ```
 
 <details>
-
 <summary>
-
 Make sure your .env has the following variables and your redirect_url is set to the one below on Upstox.
-
 </summary>
+<br>
 
 CLIENT_ID = "your client_id"
 
