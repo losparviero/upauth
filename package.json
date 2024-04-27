@@ -1,0 +1,24 @@
+{
+  "name": "upauth",
+  "version": "1.0.0",
+  "description": "Authentication management solution for Upstox's Uplink API.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/losparviero/redgif.git"
+  },
+  "author": {
+    "name": "Zubin",
+    "email": "me@zubin.org.in",
+    "url": "https://zubin.org.in"
+  },
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "open": "^10.1.0"
+  }
+}
