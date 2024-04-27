@@ -1,6 +1,6 @@
 {
   "name": "upauth",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Authentication management solution for Upstox's Uplink API.",
   "main": "src/index.js",
   "type": "module",
@@ -10,7 +10,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/losparviero/redgif.git"
+    "url": "git+https://github.com/losparviero/upauth.git"
   },
   "author": {
     "name": "Zubin",
