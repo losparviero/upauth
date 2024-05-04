@@ -5,7 +5,6 @@ import { readFile, writeFile } from "fs/promises";
 export default async function cache(file, value) {
   try {
     let existingContents = await readFile(file, "utf8");
-
     let envData = {};
     existingContents.split("\n").forEach((line) => {
       const [key, value] = line.split("=");

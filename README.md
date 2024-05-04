@@ -16,7 +16,7 @@ const accessToken = await performAuth();
 ### Install
 
 ```
-npm i upauth
+npm i uxauth
 ```
 
 <details>

@@ -1,13 +1,17 @@
 {
-  "name": "upauth",
-  "version": "0.1.0",
+  "name": "uxauth",
+  "version": "0.1.1",
   "description": "Authentication management solution for Upstox's Uplink API.",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "upstox",
+    "uplink",
+    "authentication"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/losparviero/upauth.git"

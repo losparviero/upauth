@@ -13,17 +13,22 @@ import cache from "./cache.js";
 
 export default async function performAuth() {
   try {
-    const cachedToken = JSON.parse(process.env.ACCESS_TOKEN);
-    if (cachedToken.ttl > Date.now()) {
-      return cachedToken.token;
-    } else {
-      const newToken = await getToken();
-      if (!newToken) throw new Error("Failed to fetch new token.");
-      await cache("./.env", newToken);
-      return newToken;
+    if (process.env.ACCESS_TOKEN) {
+      const cachedToken = JSON.parse(process.env.ACCESS_TOKEN);
+      if (cachedToken.ttl > Date.now()) {
+        return cachedToken.token;
+      }
     }
+    await generate();
   } catch (error) {
     console.error(`Failed to complete authentication:\n${error}`);
     process.exit(1);
   }
+}
+
+async function generate() {
+  const newToken = await getToken();
+  if (!newToken) throw new Error("Failed to fetch new token.");
+  await cache("./.env", newToken);
+  return newToken;
 }
