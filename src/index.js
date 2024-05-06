@@ -19,7 +19,7 @@ export default async function performAuth() {
         return cachedToken.token;
       }
     }
-    await generate();
+    return await generate();
   } catch (error) {
     console.error(`Failed to complete authentication:\n${error}`);
     process.exit(1);
